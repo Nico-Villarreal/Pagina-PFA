@@ -1,0 +1,46 @@
+/*--------------------GRID CONTAINER-----------------*/
+#grid-container{
+	background-color:#f1f1f0;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, auto);
+	display: grid;
+	grid-template-areas: 
+		"header header header header"
+		"aside  main main main"
+		"footer footer footer footer"
+	;
+}
+
+/*----------------------MAIN-----------------*/
+#main{
+	grid-area: main;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px black;
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	padding: 20px;
+	background-color:#c2d2e9;
+}
+.main__section-1, .main__section-2, .main__section-3, .main__section-4, .main__section-5{
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	border: solid 2px black;
+	margin: 15px;
+} 
+main section h1, h2, p{
+	padding: 15px;
+	line-height: 1.5;
+	text-align: justify;
+}
+.main__section-3--picture{
+	display: flex;
+	align-items: center;
+}
+main section picture div img{
+	width: 50%;
+	border: solid 2px black;
+	border-radius: 10px;
+}

@@ -1,12 +1,31 @@
 {
   "name": "pagina-pfa",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto para practica html y css",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/index.scss css/translated.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nico-Villarreal/Pagina-PFA.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "BOOTSTRAP"
+  ],
+  "author": "Nicolas Villarreal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nico-Villarreal/Pagina-PFA/issues"
+  },
+  "homepage": "https://github.com/Nico-Villarreal/Pagina-PFA#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.19"
+  }
 }
